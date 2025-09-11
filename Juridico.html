@@ -9,7 +9,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">  
 	<link rel="stylesheet" href="css/estilos.css">
 	<link rel="icon" href="img/ico/UCS.png">
-	<title>Seguimientos Jurídico</title>
+	<title>Seguimientos Asesoría Jurídica</title>
 </head>
 
 <body>
@@ -17,9 +17,8 @@
 		<div class="columna-izquierda">
 			<div class="registro activo" id="registro">
 				<div class="header-1">
-					<h1>Jurídico</h1>
+					<h1>Asesoría Jurídica</h1>
 				</div>
-
 
 				<form class="formulario" id="formulario">
 
@@ -46,25 +45,43 @@
 	
 							<select id="Integrante" name="Integrante">
 								<option style="color: #bdb9b9;"value="false">-Elige una opción-</option>
-								<option value="Integrante 1">Integrante 1</option>
-								<option value="Integrante 2">Integrante 2</option>
-								<option value="Integrante 3">Integrante 3</option>
-								<option value="Integrante 4">Integrante 4</option>
-								<option value="Integrante 5">Integrante 5</option>
+								<option value="Buendía Peña Néstor Saúl">Buendía Peña Néstor Saúl</option>
+								<option value="Cárdenas Salazar Mercedes">Cárdenas Salazar Mercedes</option>
+								<option value="Castillo Moreno Arturo Alberto">Castillo Moreno Arturo Alberto</option>
+								<option value="Chávez Espinosa Paulina">Chávez Espinosa Paulina</option>
+								<option value="Domínguez Sánchez Edith Eveneth">Domínguez Sánchez Edith Eveneth</option>
+								<option value="Estrada Jiménez Andrés">Estrada Jiménez Andrés</option>
+								<option value="Fernández Yépez Guillermo">Fernández Yépez Guillermo</option>
+								<option value="Lemus Vázquez Jessica">Lemus Vázquez Jessica</option>
+								<option value="López Paredes Karen Ivonne">López Paredes Karen Ivonne</option>
+								<option value="Muñoz Ortega Adriana">Muñoz Ortega Adriana</option>
+								<option value="Olivares Zamudio Karina Guadalupe">Olivares Zamudio Karina Guadalupe</option>
+								<option value="Pérez Del Rosario Rosenda">Pérez Del Rosario Rosenda</option>
+								<option value="Platero López Yolanda">Platero López Yolanda</option>
+								<option value="Ramírez Moreno María Del Carmen">Ramírez Moreno María Del Carmen</option>
+								<option value="Rojas González Karina">Rojas González Karina</option>
+								<option value="Rubio Mena Omar Israel">Rubio Mena Omar Israel</option>
+								<option value="Sánchez Nájera Daniel">Sánchez Nájera Daniel</option>
+								<option value="Vargas Barrera Esmeralda">Vargas Barrera Esmeralda</option>
+
 							</select>
 						</div>
+
+						<div hidden class="contenedor-formulario2">
+						<span for="Area">Area*
+	
+							<select id="Area" name="Area">
+								<option style="color: #bdb9b9;"value="Jurídica">Jurídica</option>
+								
+							</select>
+						</div>
+
 					</span>
-
-
 
 					<br><br>
 
-
-					
-					
-
 					<div class="contenedor-formulario" >
-						<label for="Folio">Folio generado</label>
+						<label for="Folio">Folio UCS-AI-BIS-</label>
 						<div class="contenedor-input-fecha">
 							<input  type="number" id="Folio" name="Folio" placeholder="">
 						</div>
@@ -85,11 +102,10 @@
                     <script>
                         // Función de validación
                         function validarFormulario() {
-                            const evaluadora = document.getElementById('Evaluadora').value;
                             const integrante = document.getElementById('Integrante').value;
 
                             // Verificar si Evaluadora e Integrante son diferentes de "-Elige una opción-"
-                            if (evaluadora === "false" || integrante === "false") {
+                            if (integrante === "false") {
                                 alert('Por favor, selecciona una Evaluadora e Integrante.');
                                 return false; // Evita que el formulario se envíe
                             }
@@ -108,7 +124,7 @@
                                 var script = document.createElement('script');
                                 script.src = 'js/app.js';
                                 document.head.appendChild(script);
-                                location.href = 'RegistroM1.html';
+                                location.href = 'RegistroJuridico.html';
                             }, 1500);
                         }
                     </script>
