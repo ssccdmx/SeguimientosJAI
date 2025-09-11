@@ -1,19 +1,19 @@
 document.getElementById('formulario').addEventListener('submit', async (e) => {
     e.preventDefault();
 
-    const evaluadora = document.getElementById('Evaluadora').value;
     const integrante = document.getElementById('Integrante').value;
+    const Area = document.getElementById('Area').value;
 
     // Verificar si Evaluadora e Integrante son diferentes de "-Elige una opción-"
-    if (evaluadora === "false" || integrante === "false") {
-        alert('Por favor, selecciona una Evaluadora e Integrante.');
+    if (integrante === "false") {
+        alert('Por favor, seleccione Integrante.');
         return; // Evita que el formulario se envíe
     }
 
     // Actualizar la fecha después de la validación exitosa
     document.getElementById('Fecha').textContent = obtenerFechaActual();
 
-    const respuesta = await fetch('https://sheetdb.io/api/v1/20f0w0svh80gn', {
+    const respuesta = await fetch('https://sheetdb.io/api/v1/odv1hdkt9ger6', {
         method: 'POST',
         mode: 'cors',
         headers: {
@@ -21,17 +21,9 @@ document.getElementById('formulario').addEventListener('submit', async (e) => {
         },
         body: JSON.stringify({
             "Fecha": obtenerFechaActual(),
-            "Evaluadora": evaluadora,
+            "Area": Area,
             "Integrante": integrante,
             "Folio": document.getElementById('Folio').value,
-            "Saludo": document.getElementById('Saludo').checked,
-            "Focaliza": document.getElementById('Focaliza').checked,
-            "Escucha": document.getElementById('Escucha').checked,
-            "Empatia": document.getElementById('Empatia').checked,
-            "Aviso": document.getElementById('Aviso').checked,
-            "Servicios": document.getElementById('Servicios').checked,
-            "Encuesta": document.getElementById('Encuesta').checked,
-            "Despedida": document.getElementById('Despedida').checked,
             "Observaciones": document.getElementById('Observaciones').value
         })
     });
