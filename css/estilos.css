@@ -2,6 +2,7 @@
 	--primario: #9D2148;
 	--secundario: #B28E5C;
 	--texto: #55585A;
+	--background: #eee;
 }
 
 * {
@@ -61,28 +62,28 @@ body {
 }
 
 .columna-derechaPsi {
-	background-image: url("../img/Psicología.png");
+	background-image: url("../img/Psicologia.png");
 	background-size: cover;
 	background-position-x: right;
 	
 }
 
-.columna-derechaAsis {
-	background-image: url("https://blogger.googleusercontent.com/img/a/AVvXsEifdsMH7k9G38xi7b35K6rEkYNsPPSI6GKB86BvYofSPr3J6tGf3OxQ-wSzPTdMW0xR_LzmCEm7Gh_haFlGW1gdg7IuFQfpB5nTTo-IXJRBzC1TdaI7-ycBEhzda58URRB2In94HLA6AMjDDP3yC5uvqOIg5rqGK-mYqVvIDYoZ0Z0W8mtKesOdqUralw=w400-h374");
+.columna-derechaJur {
+	background-image: url("../img/Juridico.png");
 	background-size: cover;
 	background-position-x: left;
 	
 }
 
-.columna-derechaDig {
-	background-image: url("https://blogger.googleusercontent.com/img/a/AVvXsEg_4bHkptzItRLs21GzKUm76xGnOMMPlkiqdVnyyO3vvUqHTenAEate4x2SGwPKa7NM3FRhrJfOgkBEsV1p1MAlQpLQwGuEU3blAEHqb_PAS1psaI4IyPJgY7ji8wokPIgTBxo7CgmEDyr4IjG5CBhxmuZVncNp2df85E2G-1yEqqR1A3yb1d3VdHZ4yA=w400-h374");
+.columna-derechaTs {
+	background-image: url("../img/Social.png");
 	background-size: cover;
 	background-position-x: center;
 	
 }
 
-.columna-derechaVis {
-	background-image: url("https://blogger.googleusercontent.com/img/a/AVvXsEgH_QAsPYI2NM5u3J8suty4vslya6ZXODzvddwOGmblPgyEpjN4VV3ycpxHejIiwVAGqEboI8jcQ0NLP094fq5LEzYLyFpal23_uAQ7_NC3KlQ5b-jEZpikivheKyslHbsV6edk6F5t6frqsvdJf2r7FBb-qS0bTJ5JnLi-yi7v9DoLPhdn4fCo0MapUg=w400-h374");
+.columna-derechaTan {
+	background-image: url("../img/Tanatologia.png");
 	background-size: cover;
 	background-position-x: center;
 	
@@ -138,6 +139,14 @@ span {
 	font-size: 14px;
 }
 
+small {
+	text-align: center;
+	margin-bottom: 10px;
+	display: block;
+	color: var(--texto);
+	font-size: 11px;
+}
+
 .contenedor-input-fecha {
 	position: relative;
 	width: 40%;
@@ -188,7 +197,7 @@ input {
 	border: none;
 	border-radius: 5px;
 	margin-bottom: 5px;
-	background: #f4f8f7;
+	background: var(--background);
 	color: var(--primario);
 	font-family: 'Quicksand', sans-serif;
 	border: 2px solid transparent;
@@ -213,7 +222,7 @@ select {
 	border: none;
 	border-radius: 5px;
 	margin-bottom: 5px;
-	background: #f4f8f7;
+	background: var(--background);
 	color: var(--primario);
 	font-family: 'Quicksand', sans-serif;
 	border: 2px solid transparent;
